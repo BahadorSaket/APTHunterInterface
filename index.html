@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APT Hunter</title>
+
+    <!--Vendor CSS files-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/d3-context-menu.css" rel="stylesheet">
+
+    <!--JS files-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/d3-context-menu.js"></script>
+    <script src="js/colorPicker.js"></script>
+</head>
+<body>
+    <div id='topPanel'>
+        <p style="font-size:20px; color:white; vertical-align: middle; margin-left:10px;">APT Hunter</p>
+    </div>
+    <div id='mainbody'>
+        <div class="col-md-2" id='leftPanel'>
+          <div id="div1" style="height:92%;">
+            <div id="detailPanel" class="subPanels"></div>
+            <div id="controlPanel" class="subPanels"></div>
+            <div id="suggestionPanel" class="subPanels"></div>
+            <div id="actionPanel" class="subPanels"></div>
+          </div>
+          <div id="div2" style="text-align:center;">
+            <a href="#myPanel" id='recomIcon' class="SwitchPanel">Alerts</a>
+            <a href="#myPanel" id='controPanelIcon' class="SwitchPanel"></i> Control Panel</a>
+            <a href="#myPanel" id='actionIcon' class="SwitchPanel"></i>Actions</a>
+            <a href="javascript:detailPanelCalled();" id='detailIcon' class="SwitchPanel"></i>Details</a>
+          </div>
+        </div>
+        <div class="col-md-8" id='mainContainer'>
+            <a href="#myPanel" id='leftPanelToggleButton'><i id= "slidingPanelIcon" class="fa fa-3x fa-caret-left" style='margin:5px; color:white;' aria-hidden="true"></i></a>
+            <div id="VisContainer"></div>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/ui.js"></script>
+<script src="js/global.js"></script>
+<script src="js/main.js"></script>
+
+<script  type="text/javascript">
+    $("#mainContainer").height($(window).height()-40);
+    $("#leftPanel").height($(window).height()-40);
+</script>
+<script
+</html>
